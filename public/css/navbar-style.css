@@ -1,0 +1,71 @@
+
+        .webname {
+            font-size: 30px;
+        }
+
+        .test {
+            justify-content: center;
+        }
+
+        .cora {
+            justify-content: center;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        .tet {
+            margin-top: 50px;
+            height: 200px;
+            margin-left: 90px;
+        }
+
+        .coraimage {
+            height: 100%;
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: #FFFFFF;
+        }
+
+        .h1cora {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            width: 120px;
+            font-size: 70px;
+        }
+
+        .h4cora {
+            color: green;
+            font-weight: bold;
+        }
+
+        .contai1 {
+            height: 285px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 50px;
+            width: 60%;
+            box-shadow: 100px;
+        }
+
+        .poemwordhomepage {
+            height: 30%;
+            width: 30%;
+            margin-top: 20px;
+            margin-left: 10px;
+            color: black;
+        }
+
+        .h6poemhome {
+            font-style: italic;
+            font-weight: bold;
+            margin-left: 600px;
+            text-decoration: underline;
+            color: black;
+        }
+
+        .postup {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
