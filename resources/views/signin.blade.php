@@ -59,8 +59,8 @@
 					<div class="card fat">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form method="POST">
-
+							<form method="POST" action="{{ route('login.submit') }}">
+								@csrf
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
 

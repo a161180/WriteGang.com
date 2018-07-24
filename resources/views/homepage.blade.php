@@ -75,7 +75,7 @@
                         <div class="col-6 tet">
                             <br/>
                             <h1 class="h1cora" style="color: black">Poem</h1>
-                            <h4 class="h4cora">Wonderful write ups of poem is available here. You can view poems here.</h4>
+                            <h4 class="h4cora">Wonderful poems are available here. You can view poems here.</h4>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                         <div class="col-6 tet">
                             <br/>
                             <h1 class="h1cora" style="color: black">Article</h1>
-                            <h4 class="h4cora">Wonderful write ups of articles are available here. You can view articles here.</h4>
+                            <h4 class="h4cora">Wonderful articles are available here. You can view articles here.</h4>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <div class="col-6 tet">
                             <br/>
                             <h1 class="h1cora" style="color: black">Posting</h1>
-                            <h4 class="h4cora">Users can post their own write ups here on this website which will then be published.</h4>
+                            <h4 class="h4cora">Users can post their own poems and articles here on this website which will then be published.</h4>
                         </div>
                     </div>
                 </div>
@@ -128,12 +128,10 @@
                 diction (sometimes involving rhyme), rhythm, and imagery.</h4>
         </div>
         <br/>
-        <div class="row">
-            <h6 class="h6poemhome">Click for more>>></h6>
-        </div>
     </div>
 
-    <div class="container contai1" style="background-color: lightgrey">
+
+    <div class="container contai1" style="background-color: aquamarine">
         <div class="row">
             <img src="IMG/picturetopeople.org-a86b9f38d7da48420129bcf489da4e66f577e7a9a7336a5c3a.png" class="poemwordhomepage">
         </div>
@@ -142,10 +140,11 @@
                 is an adjective, which is any word that modifies a noun. Usually adjectives modify nouns through description,
                 but articles are used instead to point out or refer to nouns.</h4>
         </div>
-        <div class="row">
-            <h6 class="h6poemhome">Click for more>>></h6>
-        </div>
+        <br/>
     </div>
+
+
+
 
 
     <!-- Optional JavaScript -->

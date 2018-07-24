@@ -12,82 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootsrap.css">
+    <link rel="stylesheet" href="{{ asset("CSS/bootstrap.min.css") }}">
+	<link rel="stylesheet" href="{{ asset("css/navbar-style.css") }}">
 
     <title>WriteUps.com</title>
 
-    <style>
-        .webname {
-            font-size: 30px;
-        }
-
-        .test {
-            justify-content: center;
-        }
-
-        .cora {
-            justify-content: center;
-            height: 300px;
-            margin-top: 50px;
-        }
-
-        .tet {
-            margin-top: 50px;
-            height: 200px;
-            margin-left: 90px;
-        }
-
-        .coraimage {
-            height: 100%;
-            width: 100%;
-            margin-top: 10px;
-            margin-left: 20px;
-            border-radius: 50%;
-            background-color: #FFFFFF;
-        }
-
-        .h1cora {
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            width: 120px;
-            font-size: 70px;
-        }
-
-        .h4cora {
-            color: green;
-            font-weight: bold;
-        }
-
-        .contai1 {
-            height: 285px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            border-radius: 50px;
-            width: 60%;
-            box-shadow: 100px;
-        }
-
-        .poemwordhomepage {
-            height: 30%;
-            width: 30%;
-            margin-top: 20px;
-            margin-left: 10px;
-            color: black;
-        }
-
-        .h6poemhome {
-            font-style: italic;
-            font-weight: bold;
-            margin-left: 600px;
-            text-decoration: underline;
-            color: black;
-        }
-
-        .postup {
-            margin-left: 20px;
-            margin-top: 20px;
-        }
-    </style>
 
 </head>
 
@@ -131,235 +60,146 @@
         </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-image: url('IMG/images.png')">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="height: 350px">
-                <div class="container cora">
-                    <div class="row">
-                        <div class="col-3 tet">
-                            <img src="img/poetry-512 (1).png" class="coraimage">
-                        </div>
-                        <div class="col-6 tet">
-                            <br/>
-                            <h1 class="h1cora" style="color: black">Poem</h1>
-                            <h4 class="h4cora">.</h4>
+    <div class="row mt-5">
+            <div class="col-sm-4 ml-5 mb-5 mr-5">
+                <div class="text-center mt-2 mb-5">
+                    <h2>Famous Quote</h2>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        The Little Pennywise
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>"Even in a dark light, im passed, if its you, then im a winner.", I said twice !</p>
+                            <footer class="blockquote-footer">Page 161 in 
+                                <cite title="Source Title">Jawa Post</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                        <div class="card">
+                                <div class="card-header">
+                                    The Little Pennywise
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>"Even in a dark light, im passed, if its you, then im a winner.", I said twice !</p>
+                                        <footer class="blockquote-footer">Page 161 in 
+                                            <cite title="Source Title">Jawa Post</cite>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="row mt-5">
+                        <div class="card">
+                                <div class="card-header">
+                                    The Little Pennywise
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>"Even in a dark light, im passed, if its you, then im a winner.", I said twice !</p>
+                                        <footer class="blockquote-footer">Page 161 in 
+                                            <cite title="Source Title">Jawa Post</cite>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-5 ml-5">
+                    <div class="text-center mb-5">
+                <h2>The Latest</h2></div>
+                <div class="row justify-content-center">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="IMG/2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="/article1" class="text">
+                                <h5 class="card-title">Poem One</h5>
+                            </a>
+                            <a href="#" class="text">
+                                <h7 class="card-title">
+                                    <i>Mas Zaky</i>
+                                </h7>
+                            </a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                content is a little bit longer.</p>
+                            <a href="#" class="btn btn-light">Jawa Post</a>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="IMG/2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="Article2.html" class="text">
+                                <h5 class="card-title">Poem Two</h5>
+                            </a>
+                            <a href="#" class="text">
+                                <h7 class="card-title">
+                                    <i>Afrijal Mas Jowo</i>
+                                </h7>
+                            </a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                content is a little bit longer.</p>
+                            <a href="#" class="btn btn-light">Indonesia Post</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="IMG/2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="Article3.html" class="text">
+                                <h5 class="card-title">Poem Three</h5>
+                            </a>
+                            <a href="#" class="text">
+                                <h7 class="card-title">
+                                    <i>Mat Gian Belakang pokok</i>
+                                </h7>
+                            </a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                                content is a little bit longer.</p>
+                            <a href="#" class="btn btn-light">Kalimantan Post</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                        <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                  </li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                </div>
             </div>
-            
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row mt-5">
-          <div class="col-sm-4 ml-5">
-            <div class="row">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">A Fairy Song</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>William Shakespear</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">poem</a>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">Card title</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">category</a>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">Card title</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">category</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="row">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">Card title</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">category</a>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">Card title</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">category</a>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="card w-75">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">Card title</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-light">category</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-sm-3 bg-light">
-            <div class="text-center">
-              <h2>Popular</h2>
-            </div>
-            <div class="row">
-              <div class="card w-75 ml-5 mt-3">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">The Splendor Falls</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card w-75 ml-5 mt-3">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">The Splendor Falls</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card w-75 ml-5 mt-3">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">The Splendor Falls</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card w-75 ml-5 mt-3">
-                <div class="card-body">
-                  <a href="#" class="text">
-                    <h5 class="card-title">The Splendor Falls</h5>
-                  </a>
-                  <a href="#" class="text">
-                    <h7 class="card-title">
-                      <i>author</i>
-                    </h7>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-        <div class="row justify-content-center mt-5">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="row bg-light">
-          <div class="col-sm-4 ml-5 mt-5">
-            <nav class="nav flex-column">
-              <a class="nav-link active" href="#">Active</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-      </div>
 
     
 
@@ -367,9 +207,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ asset("JS/jquery-3.3.1.slim.min.js") }}"></script>
+    <script src="{{ asset("JS/popper.min.js") }}"></script>
+    <script src="{{ asset("JS/bootstrap.min.js") }}"></script>
 
 
 </body>

@@ -6,6 +6,7 @@
                 <div class="panel-title">List of Products</div>
                 <div class="panel-title" style="text-align: right">
                     <a href="{{ route('create') }}" class="btn btn-default">Add new product</a>
+                    <a href="{{ route('logout') }}">Logout</a>
                 </div>
             </div>
             <div class="panel-body">
