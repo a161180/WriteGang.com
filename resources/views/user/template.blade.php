@@ -20,7 +20,7 @@
 
 <body>
     <div class="wrapper">
-        <nav id="sidebar">
+        <nav id="sidebar" class="sidebar-dark">
             <div class="sidebar-header">
                 <h3>User Page</h3>
             </div>

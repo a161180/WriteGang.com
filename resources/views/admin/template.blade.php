@@ -54,12 +54,28 @@
                     </button>
 
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
-                        </ul>
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                    <li class="dropdown thislist">
+                                <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
                     </div>
-                </div>
+                <!-- </div> -->
             </nav>
             <div class="card">
                 @yield('content')

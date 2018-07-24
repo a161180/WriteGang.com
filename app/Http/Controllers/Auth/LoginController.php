@@ -28,6 +28,7 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/user';
 
+
     /**
      * Create a new controller instance.
      *
@@ -41,5 +42,10 @@ class LoginController extends Controller
     public function loginSubmit(Request $request)
     {
         dd($request);
+    }
+
+    public function showLoginForm()
+    {
+        return view('signin');
     }
 }

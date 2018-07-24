@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
 });
 
 Auth::routes();
@@ -93,12 +93,22 @@ Route::prefix('user')->group(function(){
 
 
 Route::post('/login-submit', 'Auth\LoginController@loginSubmit')->name('login.submit');
+Route::post('/login-submit', 'Auth\LoginController@loginSubmit')->name('login.submit');
 
 
 Route::resource('article', 'ArticleController');
 Route::resource('poem', 'PoemController');
 
+Route::post('/login/custom', 'LoginController@login')->name('login.custom');
 
+Route::group(['middleware'=>'auth'], function(){
+    Route::get('user', function(){
+        return view('user.userwelcome');
+    })->name('user');
+    Route::get('admin', function(){
+        return view('admin.adminwelcome');
+    })->name('admin');
+});
 
 
 Route::get('/signin', function(){
@@ -125,9 +135,7 @@ Route::get('/adminuser', function(){
     return view('adminuser');
 });
 
-Route::get('/articlehome', function(){
-    return view('articlehome');
-});
+
 
 Route::get('/article1', function(){
     return view('article1');
@@ -141,9 +149,6 @@ Route::get('/article3', function(){
     return view('article3');
 });
 
-Route::get('/poemhome', function(){
-    return view('poemhome');
-});
 
 Route::get('/poemseeuser', function(){
     return view('poemseeuser');
@@ -164,3 +169,10 @@ Route::get('/userpostwriteuparticle', function(){
 Route::get('/userpostwriteupoem', function(){
     return view('userpostwriteupoem');
 });
+
+Route::get('/poemhome', 'PoemController@index')->name('poem.index');
+Route::get('/poem-detail/{id}', 'PoemController@show')->name('poem.detail');
+
+Route::get('/articlehome', 'ArticleController@index')->name('article.index');
+Route::get('/article-detail/{id}', 'ArticleController@show')->name('article.detail');
+

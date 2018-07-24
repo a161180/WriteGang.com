@@ -15,8 +15,8 @@ class PoemController extends Controller
     public function index()
     {
         //
-        $poems = Poem::paginate(6);
-        return view('poem.index', compact('poems'));
+        $poems = Poem::paginate(3);
+        return view('poemhome', compact('poems'));
     
     }
 
@@ -59,7 +59,7 @@ class PoemController extends Controller
     {
         //
         $poem = Poem::findOrFail($id);
-        return view('poem.show', compact('poem'));
+        return view('poem1', compact('poem'));
    
     }
 
@@ -108,4 +108,6 @@ class PoemController extends Controller
         Poem::findOrFail($id)->delete();
         return redirect()->route('poem');
     }
+
+
 }
