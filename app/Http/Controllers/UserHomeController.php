@@ -56,7 +56,7 @@ class UserHomeController extends Controller
         return view('user.showedit', compact('article'));
     }
 
-    public function showeditedit($id){
+    public function showeditedit(Request $request, $id){
         $article = Article::find($id);
         //dd($request);
         $name = $request->title;
